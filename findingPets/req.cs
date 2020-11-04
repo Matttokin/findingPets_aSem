@@ -11,7 +11,6 @@ namespace findingPets
     {
         static public OracleDataReader send(string s)
         {
-            Console.WriteLine(s);
             OracleCommand cmd = new OracleCommand(); //инициализируем новый запрос к бд
 
             cmd.Connection = db.conn; //получаем дескриптор соединения
